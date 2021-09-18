@@ -3,6 +3,8 @@ exports.InterstCategory = [
   { id: 2, name: 'Tech' },
   { id: 3, name: 'Buisness' },
   { id: 4, name: 'Sports' },
+  { id: 5, name: 'Travel' },
+  { id: 6, name: 'Auto' },
 ];
 
 exports.Interstdata = {
