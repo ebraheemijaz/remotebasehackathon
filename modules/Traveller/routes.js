@@ -5,5 +5,6 @@ const Controller = require('./controller');
 
 router.get('/getAllInterest', Controller.getAllInterest);
 router.post('/yourinterest', Controller.saveInterest);
+router.get('/getInterest', Controller.getInterest);
 
 module.exports = router;

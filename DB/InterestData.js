@@ -5,4 +5,8 @@ exports.InterstCategory = [
   { id: 4, name: 'Sports' },
 ];
 
-exports.Interstdata = {};
+exports.Interstdata = {
+  userID: {
+    interests: ['id1', 'id2'],
+  },
+};
