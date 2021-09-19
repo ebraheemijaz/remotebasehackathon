@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivInterestThumb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bg_entertainment" />
+
+        <TextView
+            android:id="@+id/tvInterestTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:text="Entertainment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

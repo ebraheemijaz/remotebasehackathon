@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/favorites"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_large" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/shimmerViewAllMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/item1"
+                layout="@layout/shimmer_item_movies_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/item2"
+                layout="@layout/shimmer_item_movies_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item1" />
+
+            <include
+                android:id="@+id/item3"
+                layout="@layout/shimmer_item_movies_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item2" />
+
+            <include
+                android:id="@+id/item4"
+                layout="@layout/shimmer_item_movies_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/item1" />
+
+            <include
+                android:id="@+id/item5"
+                layout="@layout/shimmer_item_movies_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item1"
+                android:layout_toEndOf="@id/item2" />
+
+            <include
+                android:id="@+id/item6"
+                layout="@layout/shimmer_item_movies_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item3"
+                android:layout_toEndOf="@id/item3" />
+
+        </RelativeLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavoriteMovies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

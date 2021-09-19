@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_swvl"
+    app:startDestination="@id/interestsFragment">
+
+    <fragment
+        android:id="@+id/interestsFragment"
+        android:name="com.hackathon.remotebase.challengeswvl.ui.Interests.SetInterestFragment"
+        android:label="All Movies"
+        tools:layout="@layout/fragment_set_interests">
+
+        <action
+            android:id="@+id/actionSubmit"
+            android:name="actionSubmit"
+            app:destination="@id/ratePassengerFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ratePassengerFragment"
+        android:name="com.hackathon.remotebase.challengeswvl.ui.RatePassengerFragment"
+        android:label="All Movies"
+        tools:layout="@layout/fragment_rate_passenger">
+
+        <action
+            android:id="@+id/actionSubmitRating"
+            android:name="actionSubmitRating"
+            app:destination="@id/celebrationFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/celebrationFragment"
+        android:name="com.hackathon.remotebase.challengeswvl.ui.CelebrationsFragment"
+        android:label="All Movies"
+        tools:layout="@layout/fragment_celebration">
+
+        <!--        <action-->
+        <!--            android:id="@+id/actionDetails"-->
+        <!--            android:name="actionDetails"-->
+        <!--            app:destination="@id/movieDetailsFragment" />-->
+        <!--        <action-->
+        <!--            android:id="@+id/actionViewAllFragment"-->
+        <!--            app:destination="@id/viewAllFragment"-->
+        <!--            app:launchSingleTop="false" />-->
+
+    </fragment>
+    /
+</navigation>

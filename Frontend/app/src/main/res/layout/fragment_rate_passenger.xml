@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headingTextPrimary"
+            android:text="@string/rate_your_companion"
+            android:textSize="@dimen/text_size_largest" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/cast_placeholder" />
+
+        <TextView
+            android:id="@+id/tvPassengerName"
+            style="@style/headingTextPrimary"
+            android:layout_gravity="center_horizontal"
+            android:text="Zaheer Khan"
+            android:textSize="@dimen/text_size_larger" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp">
+
+            <TextView
+                style="@style/headingTextPrimary"
+                android:text="Behaviour"
+                android:textSize="@dimen/text_size_larger" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:rating="4" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp">
+
+            <TextView
+                style="@style/headingTextPrimary"
+                android:text="Conduct"
+                android:textSize="@dimen/text_size_larger" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:rating="3" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp">
+
+            <TextView
+                style="@style/headingTextPrimary"
+                android:text="Punctuality"
+                android:textSize="@dimen/text_size_larger" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:rating="5" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp">
+
+            <TextView
+                style="@style/headingTextPrimary"
+                android:text="Would you like to travel again with him?"
+                android:textSize="@dimen/text_size_larger" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:padding="@dimen/_10sdp"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/btnYes"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="0.5"
+                    android:text="@string/yes" />
+
+                <Button
+                    android:id="@+id/btnNo"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="0.5"
+                    android:outlineAmbientShadowColor="@color/red"
+                    android:outlineSpotShadowColor="@color/red"
+                    android:text="@string/no" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_5sdp">
+
+            <TextView
+                style="@style/headingTextPrimary"
+                android:text="@string/any_suggestions"
+                android:textSize="@dimen/text_size_larger" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@color/background"
+                android:rating="5" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        style="@style/headingTextPrimary"
+        android:text="@string/choose_your_interests"
+        android:textSize="@dimen/text_size_largest" />
+
+    <TextView
+        style="@style/headingTextPrimary"
+        android:text="@string/chat_with_riders_share_your_interests_build_a_loving_swvl_community"
+        android:textAlignment="viewStart"
+        android:textColor="@color/cc_text_grey"
+        android:textSize="@dimen/text_size_moderate" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInterests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_weight="0.6" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

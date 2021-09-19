@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="text_size_small">@dimen/_8ssp</dimen>
+    <dimen name="text_size_moderate">@dimen/_10ssp</dimen>
+    <dimen name="text_size_medium">@dimen/_12ssp</dimen>
+    <dimen name="text_size_large">@dimen/_14ssp</dimen>
+    <dimen name="text_size_larger">@dimen/_16ssp</dimen>
+    <dimen name="text_size_larger1">@dimen/_20ssp</dimen>
+    <dimen name="text_size_largest">@dimen/_22ssp</dimen>
+
+    <dimen name="dialog_width">350dp</dimen>
+
+    <!--Bottom navigation text size-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">@dimen/_8ssp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">
+        @dimen/_8ssp
+    </dimen>
+
+</resources>

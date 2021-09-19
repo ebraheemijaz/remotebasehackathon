@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="background">#dddddd</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="bg_album_selector">#99960773</color>
+
+    <color name="red">#EB4348</color>
+    <color name="cc_bnv">#d83d96</color>
+    <color name="cc_black">#231f20</color>
+    <color name="cc_orange">#f79e1b</color>
+    <color name="cc_blue">#0096db</color>
+    <color name="cc_pink">#760672</color>
+    <color name="cc_text_color">#231f20</color>
+    <color name="cc_text_grey">#767576</color>
+    <color name="cc_player_grey">#767576</color>
+    <color name="cc_orane_player">#e9901b</color>
+    <color name="cc_player_minimized_bg">#f7f2f3</color>
+    <color name="cc_player_minimized_border">#7c7974</color>
+    <color name="cc_grey_mymusic">#7a7a7a</color>
+    <color name="grey_shimmer">#B3B3B3</color>
+
+</resources>

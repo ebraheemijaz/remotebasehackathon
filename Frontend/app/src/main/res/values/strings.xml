@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HackathonSwvl</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="type_to_search_a_movie">Type to search a movie</string>
+    <string name="record_not_found">No Record Found</string>
+    <string name="cast">Cast</string>
+    <string name="more_like_this">People Also Liked</string>
+    <string name="thriller">Thriller</string>
+    <string name="english">English</string>
+    <string name="storyline">StoryLine</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="upcoming_movies">UpComing Movies</string>
+    <string name="view_all">View All</string>
+    <string name="rate_your_companion">Rate your\ncompanion</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="any_suggestions">Any Suggestions</string>
+    <string name="submit">Submit</string>
+    <string name="free_yes_free_next_3_rides">Free, yes free\nnext 3 rides</string>
+    <string name="apply_coupon"><u>apply coupon</u></string>
+    <string name="a_gift_for_being_awesome_swvler">A gift for being awesome Swvler</string>
+    <string name="punctuality">Punctuality</string>
+    <string name="behaviour">Behaviour</string>
+    <string name="chat_with_riders_share_your_interests_build_a_loving_swvl_community">Chat with riders, share your interests,\nbuild a loving swvl community</string>
+    <string name="choose_your_interests">Choose your Interests</string>
+
+</resources>

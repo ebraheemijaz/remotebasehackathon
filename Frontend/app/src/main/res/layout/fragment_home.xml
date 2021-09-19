@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_6sdp"
+        tools:context=".ui.HomeFragment">
+
+        <com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/shimmerMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPopularMovies">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include layout="@layout/shimmer_item_movies" />
+
+                <include layout="@layout/shimmer_item_movies" />
+
+                <include layout="@layout/shimmer_item_movies" />
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+            android:id="@+id/tvPopularMovies"
+            style="@style/headingTextPrimary"
+            android:text="@string/top_rated_movies"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPopularMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shimmerMovies" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/shimmerUpcomingMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUpComingMovies">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include layout="@layout/shimmer_item_movies" />
+
+                <include layout="@layout/shimmer_item_movies" />
+
+                <include layout="@layout/shimmer_item_movies" />
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+            android:id="@+id/tvViewAllTopRated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tvPopularMovies"
+            android:gravity="end"
+            android:text="@string/view_all"
+            android:textColor="@color/cc_blue" />
+
+        <TextView
+            android:id="@+id/tvUpComingMovies"
+            style="@style/headingTextPrimary"
+            android:layout_below="@+id/rvPopularMovies"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/upcoming_movies"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvViewAllUpcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rvPopularMovies"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tvUpComingMovies"
+            android:gravity="end"
+            android:text="@string/view_all"
+            android:textColor="@color/cc_blue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUpcomingMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUpComingMovies" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
